@@ -1,0 +1,124 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Alamofire",
+        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "state": {
+          "branch": null,
+          "revision": "f96b619bcb2383b43d898402283924b80e2c4bae",
+          "version": "5.4.3"
+        }
+      },
+      {
+        "package": "LystAssets",
+        "repositoryURL": "https://github.com/mohsinhussain/lystAssets.git",
+        "state": {
+          "branch": "master",
+          "revision": "7769979eadc5d6d2ce19c16afef4887b211c8a18",
+          "version": null
+        }
+      },
+      {
+        "package": "LystDatabaseManager",
+        "repositoryURL": "https://github.com/mohsinhussain/lystDatabaseManager.git",
+        "state": {
+          "branch": "master",
+          "revision": "1b2acb0aa2ca42e5e4c03cf8b0e0864d63e98d0e",
+          "version": null
+        }
+      },
+      {
+        "package": "LystExtensions",
+        "repositoryURL": "https://github.com/mohsinhussain/lystExtensions.git",
+        "state": {
+          "branch": "master",
+          "revision": "314a145b160ea0b2510566d9a913f6c2bb4b0a1e",
+          "version": null
+        }
+      },
+      {
+        "package": "LystModels",
+        "repositoryURL": "https://github.com/mohsinhussain/lystModels.git",
+        "state": {
+          "branch": "master",
+          "revision": "9918aac101fb66d9c3ce66f4be9dc3b80c6abacf",
+          "version": null
+        }
+      },
+      {
+        "package": "LystNetworkManager",
+        "repositoryURL": "https://github.com/mohsinhussain/lystNetworkManager.git",
+        "state": {
+          "branch": "master",
+          "revision": "dfc326b9fa8cb6fa2a2cf7aa4e2050b0e9f53282",
+          "version": null
+        }
+      },
+      {
+        "package": "NVActivityIndicatorView",
+        "repositoryURL": "https://github.com/ninjaprox/NVActivityIndicatorView",
+        "state": {
+          "branch": null,
+          "revision": "bcb52371f2259254bac6690f92bb474a61768c47",
+          "version": "5.1.1"
+        }
+      },
+      {
+        "package": "ObjectMapper",
+        "repositoryURL": "https://github.com/tristanhimmelman/ObjectMapper.git",
+        "state": {
+          "branch": null,
+          "revision": "0b96a734de3ea1c87374ae677064f86adb0716ec",
+          "version": "4.2.0"
+        }
+      },
+      {
+        "package": "Reachability",
+        "repositoryURL": "https://github.com/ashleymills/Reachability.swift",
+        "state": {
+          "branch": null,
+          "revision": "c01bbdf2d633cf049ae1ed1a68a2020a8bda32e2",
+          "version": "5.1.0"
+        }
+      },
+      {
+        "package": "Realm",
+        "repositoryURL": "https://github.com/realm/realm-cocoa",
+        "state": {
+          "branch": null,
+          "revision": "d6f68b8f613dca3b13430da5e0be5d27b500f486",
+          "version": "10.7.7"
+        }
+      },
+      {
+        "package": "RealmDatabase",
+        "repositoryURL": "https://github.com/realm/realm-core",
+        "state": {
+          "branch": null,
+          "revision": "018adb3469c2882904febca251778129ef4a9b70",
+          "version": "10.7.2"
+        }
+      },
+      {
+        "package": "SwiftKeychainWrapper",
+        "repositoryURL": "https://github.com/jrendel/SwiftKeychainWrapper",
+        "state": {
+          "branch": null,
+          "revision": "185a3165346a03767101c4f62e9a545a0fe0530f",
+          "version": "4.0.1"
+        }
+      },
+      {
+        "package": "SwiftyShadow",
+        "repositoryURL": "https://github.com/7glyphs/SwiftyShadow",
+        "state": {
+          "branch": null,
+          "revision": "6fdf4469272bf5d932ad9e899d457b0ce156fdcb",
+          "version": "1.7.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
