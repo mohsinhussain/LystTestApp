@@ -30,7 +30,7 @@
 			<key>orderHint</key>
 			<integer>5</integer>
 		</dict>
-		<key>LystTestApp-Staging.xcscheme</key>
+		<key>LystTestApp-Staging.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
@@ -54,6 +54,11 @@
 			<true/>
 		</dict>
 		<key>A76D63D026BF1C6A009FB433</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A76D645826BFC0D3009FB433</key>
 		<dict>
 			<key>primary</key>
 			<true/>
