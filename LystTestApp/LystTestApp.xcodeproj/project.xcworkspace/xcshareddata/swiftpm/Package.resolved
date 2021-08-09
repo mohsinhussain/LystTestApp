@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/mohsinhussain/lystExtensions.git",
         "state": {
           "branch": "master",
-          "revision": "314a145b160ea0b2510566d9a913f6c2bb4b0a1e",
+          "revision": "61be1de899b066564bf21ff772c65c7c4549a02f",
           "version": null
         }
       },
@@ -98,6 +98,15 @@
           "branch": null,
           "revision": "018adb3469c2882904febca251778129ef4a9b70",
           "version": "10.7.2"
+        }
+      },
+      {
+        "package": "SDWebImage",
+        "repositoryURL": "https://github.com/SDWebImage/SDWebImage",
+        "state": {
+          "branch": null,
+          "revision": "76dd4b49110b8624317fc128e7fa0d8a252018bc",
+          "version": "5.11.1"
         }
       },
       {

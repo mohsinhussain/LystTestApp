@@ -8,6 +8,8 @@
 import UIKit
 import LystExtensions
 import LystAssets
+import LystModels
+import SDWebImage
 
 class DogsListCollectionViewCell: UICollectionViewCell, ReusableCell {
 
@@ -17,7 +19,7 @@ class DogsListCollectionViewCell: UICollectionViewCell, ReusableCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        dogImageView.layer.cornerRadius = 10.0
+        dogImageView.topOnlyCornerRadius(radiusValue: 10)
         containerView.addSwiftyOutterShadowWithCorner(shadowColor: UIColor.black,
                                                            offSet: CGSize(width: 0, height: 0),
                                                            opacity: 0.12, shadowRadius: 4, cornerRadius: 10)
@@ -32,9 +34,13 @@ class DogsListCollectionViewCell: UICollectionViewCell, ReusableCell {
     
     // MARK: - Public -
     
-    func configure() {
-        dogNameLabel.text = "German Shephard"
-        dogImageView.image = Asset.splashLogo.image
+    func configure(with dog: Dog) {
+        dogNameLabel.text = dog.name
+        if let urlString = dog.image?.url, let imageURL = URL(string: urlString) {
+            dogImageView.sd_setImage(with: imageURL, placeholderImage: Asset.splashLogo.image)
+        } else {
+            dogImageView.image = Asset.splashLogo.image
+        }
     }
 
 }

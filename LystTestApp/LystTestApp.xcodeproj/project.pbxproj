@@ -135,6 +135,9 @@
 		A76D64D926BFC4DA009FB433 /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = A76D64D826BFC4DA009FB433 /* EnvironmentVariables.plist */; };
 		A76D64DA26BFC4DA009FB433 /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = A76D64D826BFC4DA009FB433 /* EnvironmentVariables.plist */; };
 		A76D64DB26BFC4DA009FB433 /* EnvironmentVariables.plist in Resources */ = {isa = PBXBuildFile; fileRef = A76D64D826BFC4DA009FB433 /* EnvironmentVariables.plist */; };
+		A76D64DE26BFC8E4009FB433 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A76D64DD26BFC8E4009FB433 /* SDWebImage */; };
+		A76D64E126BFC8F4009FB433 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A76D64E026BFC8F4009FB433 /* SDWebImage */; };
+		A76D64E326BFC8FD009FB433 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A76D64E226BFC8FD009FB433 /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,6 +214,7 @@
 			files = (
 				A76D644D26BFAB71009FB433 /* NVActivityIndicatorViewExtended in Frameworks */,
 				A76D642C26BF1E13009FB433 /* LystAssets in Frameworks */,
+				A76D64DE26BFC8E4009FB433 /* SDWebImage in Frameworks */,
 				A76D642926BF1DB5009FB433 /* LystModels in Frameworks */,
 				A76D644B26BFAB71009FB433 /* NVActivityIndicatorView in Frameworks */,
 				A76D642626BF1D6D009FB433 /* Reachability in Frameworks */,
@@ -239,6 +243,7 @@
 			files = (
 				A76D648426BFC0D3009FB433 /* NVActivityIndicatorViewExtended in Frameworks */,
 				A76D648526BFC0D3009FB433 /* LystAssets in Frameworks */,
+				A76D64E126BFC8F4009FB433 /* SDWebImage in Frameworks */,
 				A76D648626BFC0D3009FB433 /* LystModels in Frameworks */,
 				A76D648726BFC0D3009FB433 /* NVActivityIndicatorView in Frameworks */,
 				A76D648826BFC0D3009FB433 /* Reachability in Frameworks */,
@@ -253,6 +258,7 @@
 			files = (
 				A76D64C426BFC0DF009FB433 /* NVActivityIndicatorViewExtended in Frameworks */,
 				A76D64C526BFC0DF009FB433 /* LystAssets in Frameworks */,
+				A76D64E326BFC8FD009FB433 /* SDWebImage in Frameworks */,
 				A76D64C626BFC0DF009FB433 /* LystModels in Frameworks */,
 				A76D64C726BFC0DF009FB433 /* NVActivityIndicatorView in Frameworks */,
 				A76D64C826BFC0DF009FB433 /* Reachability in Frameworks */,
@@ -271,6 +277,7 @@
 				A76D63C926BF1C6A009FB433 /* LystTestAppTests */,
 				A76D63D426BF1C6A009FB433 /* LystTestAppUITests */,
 				A76D63B126BF1C69009FB433 /* Products */,
+				A76D64DF26BFC8F4009FB433 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -289,13 +296,13 @@
 		A76D63B226BF1C69009FB433 /* LystTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				A76D645426BFBEDA009FB433 /* Resources */,
 				A76D640126BF1CB9009FB433 /* Core */,
 				A76D63EE26BF1CB9009FB433 /* CustomUI */,
 				A76D63F226BF1CB9009FB433 /* Flows */,
 				A76D63E326BF1CB9009FB433 /* Misc */,
 				A76D63BC26BF1C6A009FB433 /* Assets.xcassets */,
 				A76D63BE26BF1C6A009FB433 /* LaunchScreen.storyboard */,
+				A76D645426BFBEDA009FB433 /* Resources */,
 			);
 			path = LystTestApp;
 			sourceTree = "<group>";
@@ -565,6 +572,13 @@
 			path = InfoPLists;
 			sourceTree = "<group>";
 		};
+		A76D64DF26BFC8F4009FB433 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -589,6 +603,7 @@
 				A76D643126BF1F45009FB433 /* LystExtensions */,
 				A76D644A26BFAB71009FB433 /* NVActivityIndicatorView */,
 				A76D644C26BFAB71009FB433 /* NVActivityIndicatorViewExtended */,
+				A76D64DD26BFC8E4009FB433 /* SDWebImage */,
 			);
 			productName = LystTestApp;
 			productReference = A76D63B026BF1C69009FB433 /* LystTestApp.app */;
@@ -651,6 +666,7 @@
 				A76D646126BFC0D3009FB433 /* LystExtensions */,
 				A76D646326BFC0D3009FB433 /* NVActivityIndicatorView */,
 				A76D646526BFC0D3009FB433 /* NVActivityIndicatorViewExtended */,
+				A76D64E026BFC8F4009FB433 /* SDWebImage */,
 			);
 			productName = LystTestApp;
 			productReference = A76D649626BFC0D3009FB433 /* LystTestApp-Staging.app */;
@@ -677,6 +693,7 @@
 				A76D64A126BFC0DF009FB433 /* LystExtensions */,
 				A76D64A326BFC0DF009FB433 /* NVActivityIndicatorView */,
 				A76D64A526BFC0DF009FB433 /* NVActivityIndicatorViewExtended */,
+				A76D64E226BFC8FD009FB433 /* SDWebImage */,
 			);
 			productName = LystTestApp;
 			productReference = A76D64D626BFC0DF009FB433 /* LystTestApp-Dev.app */;
@@ -720,6 +737,7 @@
 				A76D642D26BF1E49009FB433 /* XCRemoteSwiftPackageReference "lystNetworkManager" */,
 				A76D643026BF1F45009FB433 /* XCRemoteSwiftPackageReference "lystExtensions" */,
 				A76D644926BFAB71009FB433 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */,
+				A76D64DC26BFC8E4009FB433 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = A76D63B126BF1C69009FB433 /* Products */;
 			projectDirPath = "";
@@ -1626,6 +1644,14 @@
 				minimumVersion = 5.1.1;
 			};
 		};
+		A76D64DC26BFC8E4009FB433 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1733,6 +1759,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A76D64A426BFC0DF009FB433 /* XCRemoteSwiftPackageReference "NVActivityIndicatorView" */;
 			productName = NVActivityIndicatorViewExtended;
+		};
+		A76D64DD26BFC8E4009FB433 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76D64DC26BFC8E4009FB433 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		A76D64E026BFC8F4009FB433 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76D64DC26BFC8E4009FB433 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		A76D64E226BFC8FD009FB433 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A76D64DC26BFC8E4009FB433 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

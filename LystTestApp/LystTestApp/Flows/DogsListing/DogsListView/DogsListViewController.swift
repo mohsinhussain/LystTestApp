@@ -121,14 +121,16 @@ extension DogsListViewController: UICollectionViewDataSource, UICollectionViewDe
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return viewModel.getDogs().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DogsListCollectionViewCell",
                                                       for: indexPath) as? DogsListCollectionViewCell
 //        let boxAction = viewModel.merchantActions[indexPath.row]
-        cell?.configure()
+        if let dog = viewModel.getDog(at: indexPath.row) {
+            cell?.configure(with: dog)
+        }
         return cell ?? UICollectionViewCell()
     }
     

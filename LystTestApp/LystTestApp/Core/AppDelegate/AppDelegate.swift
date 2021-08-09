@@ -7,6 +7,8 @@
 
 import UIKit
 import LystDatabaseManager
+import LystNetworkManager
+import LystModels
 
 let realmDatabaseVersion = 1
 
@@ -14,6 +16,7 @@ let realmDatabaseVersion = 1
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setupDBManager()
         return true
     }
 
@@ -38,6 +41,27 @@ extension AppDelegate {
     //MARK: - SetUp AhoyAuth
     func setupDBManager() {
         LystDatabaseManager.shared().setup(dbVersion: UInt64(realmDatabaseVersion))
+        if let selectedRegion = Region(rawValue: UserDefaultsEnum.selectedRegion) {
+            setupLystNetworkManager(selectedRegion: selectedRegion)
+        } else {
+            setupLystNetworkManager(selectedRegion: .UK)
+        }
+    }
+    
+    func setupLystNetworkManager(selectedRegion: Region) {
+        print("setting up auth with region \(selectedRegion.rawValue)")
+        let activeConfig = AppConfiguration.shared.getActiveConfiguration()
+        switch activeConfig {
+            case .debug:
+                LystNetworkManagerSettings.setup(environment: LystNetworkManager.AppEnvironment.Debug, region: selectedRegion, dbVersion: realmDatabaseVersion)
+//                AhoyAuthSettings.setup(langCode: .english, environment: .Debug, region: selectedRegion, userType: .merchant)
+            case .staging:
+                LystNetworkManagerSettings.setup(environment: LystNetworkManager.AppEnvironment.Staging, region: selectedRegion, dbVersion: realmDatabaseVersion)
+//                AhoyAuthSettings.setup(langCode: .english, environment: .Staging, region: selectedRegion, userType: .merchant)
+            case .release:
+                LystNetworkManagerSettings.setup(environment: LystNetworkManager.AppEnvironment.Release, region: selectedRegion, dbVersion: realmDatabaseVersion)
+//                AhoyAuthSettings.setup(langCode: .english, environment: .Release, region: selectedRegion, userType: .merchant)
+        }
     }
 
 }

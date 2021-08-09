@@ -13,7 +13,7 @@ enum DogBreedsAPI: String {
     case searchBreeds = "breeds/search?q=%@"
     
     // Get Breeds
-    case getBreeds = "breeds?limit=%@&page=%@&order=Asc"
+    case getBreeds = "breeds"
 //    case getOrdersHistory = "Order/OrderHistory?pagenumber=%d&pagesize=%d&statusIds=%@"
     
     /** Contains the full path to the endpoint */
@@ -24,7 +24,7 @@ enum DogBreedsAPI: String {
             endpoint = String(format: endpoint, arguments: parameters)
         }
         
-        return "\(AppConfiguration.shared.getBaseURL())/\(endpoint)"
+        return "\(AppConfiguration.shared.getBaseURL())\(endpoint)"
     }
     
 }
