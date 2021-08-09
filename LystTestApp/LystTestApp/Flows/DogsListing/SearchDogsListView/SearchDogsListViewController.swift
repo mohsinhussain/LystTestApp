@@ -176,6 +176,7 @@ extension SearchDogsListViewController: ViewModelUIDelegate {
             case .success:
                 hideActivity()
                 emptyListPlaceHolderView.isHidden = viewModel.getDogs().count > 0
+                searchResultsLabel.isHidden = viewModel.getDogs().count == 0
                 dogsCollectionView.reloadData()
                 
             case .error(let message):

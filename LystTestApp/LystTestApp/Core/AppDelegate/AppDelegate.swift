@@ -38,7 +38,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate {
 
-    //MARK: - SetUp AhoyAuth
     func setupDBManager() {
         LystDatabaseManager.shared().setup(dbVersion: UInt64(realmDatabaseVersion))
         if let selectedRegion = Region(rawValue: UserDefaultsEnum.selectedRegion) {

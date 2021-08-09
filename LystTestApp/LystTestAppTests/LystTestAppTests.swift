@@ -6,7 +6,6 @@
 //
 
 import XCTest
-@testable import LystTestApp
 
 class LystTestAppTests: XCTestCase {
 

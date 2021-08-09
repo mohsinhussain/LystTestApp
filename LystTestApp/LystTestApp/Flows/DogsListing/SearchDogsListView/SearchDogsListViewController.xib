@@ -87,7 +87,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qav-dl-KUT" customClass="DisablingButton" customModule="AhoyMerchant" customModuleProvider="target">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qav-dl-KUT" customClass="DisablingButton" customModule="LystTestApp" customModuleProvider="target">
                             <rect key="frame" x="20" y="87.5" width="374" height="42"/>
                             <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <constraints>
@@ -136,10 +136,10 @@
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-u2-fgK">
                     <rect key="frame" x="20" y="232" width="374" height="15.5"/>
                     <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
-                    <color key="textColor" name="Colors/gray_BFBFBF"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-Es-Dww" customClass="EmptyListPlaceHolderView" customModule="AhoyMerchant" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-Es-Dww" customClass="EmptyListPlaceHolderView" customModule="LystTestApp" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="262" width="414" height="190"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="190" id="JM7-ig-4oZ"/>
@@ -173,9 +173,6 @@
     <resources>
         <image name="search-icon" width="14" height="14"/>
         <namedColor name="Colors/gray_A7A7A7">
-            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <namedColor name="Colors/gray_BFBFBF">
             <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
