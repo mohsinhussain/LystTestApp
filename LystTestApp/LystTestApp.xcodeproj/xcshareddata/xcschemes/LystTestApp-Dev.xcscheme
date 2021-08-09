@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A76D63AF26BF1C69009FB433"
-               BuildableName = "LystTestApp.app"
-               BlueprintName = "LystTestApp"
+               BlueprintIdentifier = "A76D649826BFC0DF009FB433"
+               BuildableName = "LystTestApp-Dev.app"
+               BlueprintName = "LystTestApp-Dev"
                ReferencedContainer = "container:LystTestApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,15 +44,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A76D63AF26BF1C69009FB433"
-            BuildableName = "LystTestApp.app"
-            BlueprintName = "LystTestApp"
+            BlueprintIdentifier = "A76D649826BFC0DF009FB433"
+            BuildableName = "LystTestApp-Dev.app"
+            BlueprintName = "LystTestApp-Dev"
             ReferencedContainer = "container:LystTestApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Staging"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -61,18 +61,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A76D63AF26BF1C69009FB433"
-            BuildableName = "LystTestApp.app"
-            BlueprintName = "LystTestApp"
+            BlueprintIdentifier = "A76D645826BFC0D3009FB433"
+            BuildableName = "LystTestApp-Staging.app"
+            BlueprintName = "LystTestApp-Staging"
             ReferencedContainer = "container:LystTestApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Staging">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Staging"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

@@ -7,86 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AC247430-EBD0-48BA-881E-7239266AFD7B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LystTestApp/Flows/DogsListing/DogsListView/DogsListViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1BB12ABF-22FC-440E-965C-7DBDC4722E1F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LystTestApp/Flows/DogsListing/DogsListView/DogsListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchDogsList()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6869B443-A9D4-48AC-A185-7E2B545A0952"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LystTestApp/Core/Services/NetworkServices/BreedService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
-            landmarkName = "fetchDogs(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B437CA15-07E0-437A-9F92-306573509152"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LystTestApp/Core/Services/NetworkServices/BreedService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "fetchDogsFromDatabase()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DE32205B-5E72-40D8-BFF3-60336FB13B4D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LystTestApp/Core/Services/NetworkServices/BreedService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "saveDogsToDatabase(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "34F77044-1DCB-4ACC-9E3D-32833BCBE8A0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -119,80 +39,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6D4AC9A4-FE50-4D17-9E73-1943F09C9705"
+            uuid = "DE22EB4E-441E-4649-A12C-40E8CFEFDBE6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../../Library/Developer/Xcode/DerivedData/LystTestApp-geuegncjckmfhifkvipqtnvpsmvi/SourcePackages/checkouts/lystDatabaseManager/Sources/LystDatabaseManager/DatabaseService.swift"
+            filePath = "LystTestApp/Core/AppDelegate/AppDelegate.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "configureDataMigration(version:)"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "setupLystNetworkManager(selectedRegion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "5DE1B69B-D41A-457E-891A-FF1462C3230A"
+            uuid = "DF8400B1-A5BC-4578-A0B2-5307E014EADC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../../../Library/Developer/Xcode/DerivedData/LystTestApp-geuegncjckmfhifkvipqtnvpsmvi/SourcePackages/checkouts/lystNetworkManager/Sources/LystNetworkManager/Services/Shared/AppConfiguration.swift"
+            filePath = "LystTestApp/Misc/Helpers/EnvironmentConfigurations/AppConfiguration.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "setup(environment:region:dbVersion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "108CAE9A-8962-4F9C-A289-054ADDD52ED4"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../Library/Developer/Xcode/DerivedData/LystTestApp-geuegncjckmfhifkvipqtnvpsmvi/SourcePackages/checkouts/lystDatabaseManager/Sources/LystDatabaseManager/DatabaseService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "configureDataMigration(version:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DF95CF84-1590-41CF-8F5D-468F1D5BA451"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../Library/Developer/Xcode/DerivedData/LystTestApp-geuegncjckmfhifkvipqtnvpsmvi/SourcePackages/checkouts/lystDatabaseManager/Sources/LystDatabaseManager/DatabaseService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "94"
-            endingLineNumber = "94"
-            landmarkName = "findWithSort(satisfying:by:isAscending:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "EDDAF97D-DE7E-4AFE-AB99-0415836EE16F"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../../../../Library/Developer/Xcode/DerivedData/LystTestApp-geuegncjckmfhifkvipqtnvpsmvi/SourcePackages/checkouts/lystNetworkManager/Sources/LystNetworkManager/Services/Shared/AppConfiguration.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "initAPIConfig()"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "initializeConfig()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -14,44 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A76D63AF26BF1C69009FB433"
-               BuildableName = "LystTestApp.app"
-               BlueprintName = "LystTestApp"
+               BlueprintIdentifier = "A76D645826BFC0D3009FB433"
+               BuildableName = "LystTestApp-Staging.app"
+               BlueprintName = "LystTestApp-Staging"
                ReferencedContainer = "container:LystTestApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Staging"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A76D63C526BF1C6A009FB433"
-               BuildableName = "LystTestAppTests.xctest"
-               BlueprintName = "LystTestAppTests"
-               ReferencedContainer = "container:LystTestApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A76D63D026BF1C6A009FB433"
-               BuildableName = "LystTestAppUITests.xctest"
-               BlueprintName = "LystTestAppUITests"
-               ReferencedContainer = "container:LystTestApp.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Staging"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -64,15 +44,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A76D63AF26BF1C69009FB433"
-            BuildableName = "LystTestApp.app"
-            BlueprintName = "LystTestApp"
+            BlueprintIdentifier = "A76D645826BFC0D3009FB433"
+            BuildableName = "LystTestApp-Staging.app"
+            BlueprintName = "LystTestApp-Staging"
             ReferencedContainer = "container:LystTestApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Staging"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -81,18 +61,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A76D63AF26BF1C69009FB433"
-            BuildableName = "LystTestApp.app"
-            BlueprintName = "LystTestApp"
+            BlueprintIdentifier = "A76D645826BFC0D3009FB433"
+            BuildableName = "LystTestApp-Staging.app"
+            BlueprintName = "LystTestApp-Staging"
             ReferencedContainer = "container:LystTestApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Staging">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Staging"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
