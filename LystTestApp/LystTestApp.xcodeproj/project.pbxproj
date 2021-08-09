@@ -138,6 +138,30 @@
 		A76D64DE26BFC8E4009FB433 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A76D64DD26BFC8E4009FB433 /* SDWebImage */; };
 		A76D64E126BFC8F4009FB433 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A76D64E026BFC8F4009FB433 /* SDWebImage */; };
 		A76D64E326BFC8FD009FB433 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A76D64E226BFC8FD009FB433 /* SDWebImage */; };
+		A76D64E526C1137F009FB433 /* DisablingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D64E426C1137F009FB433 /* DisablingButton.swift */; };
+		A76D64E626C1137F009FB433 /* DisablingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D64E426C1137F009FB433 /* DisablingButton.swift */; };
+		A76D64E726C1137F009FB433 /* DisablingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D64E426C1137F009FB433 /* DisablingButton.swift */; };
+		A76D64E926C11515009FB433 /* EmptyListPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D64E826C11515009FB433 /* EmptyListPlaceHolderView.swift */; };
+		A76D64EA26C11515009FB433 /* EmptyListPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D64E826C11515009FB433 /* EmptyListPlaceHolderView.swift */; };
+		A76D64EB26C11515009FB433 /* EmptyListPlaceHolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D64E826C11515009FB433 /* EmptyListPlaceHolderView.swift */; };
+		A76D64EE26C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D64ED26C11563009FB433 /* EmptyListPlaceHolderView.xib */; };
+		A76D64EF26C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D64ED26C11563009FB433 /* EmptyListPlaceHolderView.xib */; };
+		A76D64F026C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D64ED26C11563009FB433 /* EmptyListPlaceHolderView.xib */; };
+		A76D64F626C116FD009FB433 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F226C116FC009FB433 /* SourceSansPro-Regular.ttf */; };
+		A76D64F726C116FD009FB433 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F226C116FC009FB433 /* SourceSansPro-Regular.ttf */; };
+		A76D64F826C116FD009FB433 /* SourceSansPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F226C116FC009FB433 /* SourceSansPro-Regular.ttf */; };
+		A76D64F926C116FD009FB433 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F326C116FC009FB433 /* SourceSansPro-Bold.ttf */; };
+		A76D64FA26C116FD009FB433 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F326C116FC009FB433 /* SourceSansPro-Bold.ttf */; };
+		A76D64FB26C116FD009FB433 /* SourceSansPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F326C116FC009FB433 /* SourceSansPro-Bold.ttf */; };
+		A76D64FC26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F426C116FC009FB433 /* SourceSansPro-SemiBold.ttf */; };
+		A76D64FD26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F426C116FC009FB433 /* SourceSansPro-SemiBold.ttf */; };
+		A76D64FE26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F426C116FC009FB433 /* SourceSansPro-SemiBold.ttf */; };
+		A76D64FF26C116FD009FB433 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F526C116FC009FB433 /* SourceSansPro-Italic.ttf */; };
+		A76D650026C116FD009FB433 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F526C116FC009FB433 /* SourceSansPro-Italic.ttf */; };
+		A76D650126C116FD009FB433 /* SourceSansPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A76D64F526C116FC009FB433 /* SourceSansPro-Italic.ttf */; };
+		A76D650326C11876009FB433 /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650226C11876009FB433 /* SearchListViewModel.swift */; };
+		A76D650426C11876009FB433 /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650226C11876009FB433 /* SearchListViewModel.swift */; };
+		A76D650526C11876009FB433 /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650226C11876009FB433 /* SearchListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +229,14 @@
 		A76D649626BFC0D3009FB433 /* LystTestApp-Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LystTestApp-Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76D64D626BFC0DF009FB433 /* LystTestApp-Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LystTestApp-Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A76D64D826BFC4DA009FB433 /* EnvironmentVariables.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = EnvironmentVariables.plist; sourceTree = "<group>"; };
+		A76D64E426C1137F009FB433 /* DisablingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisablingButton.swift; sourceTree = "<group>"; };
+		A76D64E826C11515009FB433 /* EmptyListPlaceHolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyListPlaceHolderView.swift; sourceTree = "<group>"; };
+		A76D64ED26C11563009FB433 /* EmptyListPlaceHolderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyListPlaceHolderView.xib; sourceTree = "<group>"; };
+		A76D64F226C116FC009FB433 /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		A76D64F326C116FC009FB433 /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		A76D64F426C116FC009FB433 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		A76D64F526C116FC009FB433 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
+		A76D650226C11876009FB433 /* SearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,9 +416,11 @@
 		A76D63EE26BF1CB9009FB433 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				A76D64EC26C11548009FB433 /* EmptyListPlaceHolderView */,
 				A76D63EF26BF1CB9009FB433 /* MainViewController.swift */,
 				A76D63F026BF1CB9009FB433 /* ReusableCell.swift */,
 				A76D63F126BF1CB9009FB433 /* NavigationController.swift */,
+				A76D64E426C1137F009FB433 /* DisablingButton.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -424,6 +458,7 @@
 			children = (
 				A76D63F826BF1CB9009FB433 /* SearchDogsListViewController.xib */,
 				A76D63F926BF1CB9009FB433 /* SearchDogsListViewController.swift */,
+				A76D650226C11876009FB433 /* SearchListViewModel.swift */,
 			);
 			path = SearchDogsListView;
 			sourceTree = "<group>";
@@ -556,6 +591,7 @@
 		A76D645426BFBEDA009FB433 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A76D64F126C116FC009FB433 /* Fonts */,
 				A76D64D826BFC4DA009FB433 /* EnvironmentVariables.plist */,
 				A76D645526BFBEE8009FB433 /* InfoPLists */,
 			);
@@ -577,6 +613,26 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A76D64EC26C11548009FB433 /* EmptyListPlaceHolderView */ = {
+			isa = PBXGroup;
+			children = (
+				A76D64E826C11515009FB433 /* EmptyListPlaceHolderView.swift */,
+				A76D64ED26C11563009FB433 /* EmptyListPlaceHolderView.xib */,
+			);
+			path = EmptyListPlaceHolderView;
+			sourceTree = "<group>";
+		};
+		A76D64F126C116FC009FB433 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A76D64F226C116FC009FB433 /* SourceSansPro-Regular.ttf */,
+				A76D64F326C116FC009FB433 /* SourceSansPro-Bold.ttf */,
+				A76D64F426C116FC009FB433 /* SourceSansPro-SemiBold.ttf */,
+				A76D64F526C116FC009FB433 /* SourceSansPro-Italic.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -761,9 +817,14 @@
 				A76D63BD26BF1C6A009FB433 /* Assets.xcassets in Resources */,
 				A76D641D26BF1CB9009FB433 /* SplashViewController.xib in Resources */,
 				A76D641A26BF1CB9009FB433 /* DogsListViewController.xib in Resources */,
+				A76D64FC26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */,
 				A76D641726BF1CB9009FB433 /* SearchDogsListViewController.xib in Resources */,
 				A76D641526BF1CB9009FB433 /* DogsListCollectionViewCell.xib in Resources */,
+				A76D64EE26C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */,
+				A76D64F926C116FD009FB433 /* SourceSansPro-Bold.ttf in Resources */,
 				A76D64D926BFC4DA009FB433 /* EnvironmentVariables.plist in Resources */,
+				A76D64FF26C116FD009FB433 /* SourceSansPro-Italic.ttf in Resources */,
+				A76D64F626C116FD009FB433 /* SourceSansPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -789,9 +850,14 @@
 				A76D648D26BFC0D3009FB433 /* Assets.xcassets in Resources */,
 				A76D648E26BFC0D3009FB433 /* SplashViewController.xib in Resources */,
 				A76D648F26BFC0D3009FB433 /* DogsListViewController.xib in Resources */,
+				A76D64FD26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */,
 				A76D649026BFC0D3009FB433 /* SearchDogsListViewController.xib in Resources */,
 				A76D649126BFC0D3009FB433 /* DogsListCollectionViewCell.xib in Resources */,
+				A76D64EF26C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */,
+				A76D64FA26C116FD009FB433 /* SourceSansPro-Bold.ttf in Resources */,
 				A76D64DA26BFC4DA009FB433 /* EnvironmentVariables.plist in Resources */,
+				A76D650026C116FD009FB433 /* SourceSansPro-Italic.ttf in Resources */,
+				A76D64F726C116FD009FB433 /* SourceSansPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,9 +869,14 @@
 				A76D64CD26BFC0DF009FB433 /* Assets.xcassets in Resources */,
 				A76D64CE26BFC0DF009FB433 /* SplashViewController.xib in Resources */,
 				A76D64CF26BFC0DF009FB433 /* DogsListViewController.xib in Resources */,
+				A76D64FE26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */,
 				A76D64D026BFC0DF009FB433 /* SearchDogsListViewController.xib in Resources */,
 				A76D64D126BFC0DF009FB433 /* DogsListCollectionViewCell.xib in Resources */,
+				A76D64F026C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */,
+				A76D64FB26C116FD009FB433 /* SourceSansPro-Bold.ttf in Resources */,
 				A76D64DB26BFC4DA009FB433 /* EnvironmentVariables.plist in Resources */,
+				A76D650126C116FD009FB433 /* SourceSansPro-Italic.ttf in Resources */,
+				A76D64F826C116FD009FB433 /* SourceSansPro-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -816,6 +887,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76D650326C11876009FB433 /* SearchListViewModel.swift in Sources */,
 				A76D643C26BF9F90009FB433 /* API.swift in Sources */,
 				A76D644F26BFAC54009FB433 /* Dissmissing.swift in Sources */,
 				A76D641426BF1CB9009FB433 /* NavigationController.swift in Sources */,
@@ -836,6 +908,8 @@
 				A76D644626BFA482009FB433 /* UserDefaultInfo+DeviceSpecific.swift in Sources */,
 				A76D641F26BF1CB9009FB433 /* AppDelegate.swift in Sources */,
 				A76D641226BF1CB9009FB433 /* MainViewController.swift in Sources */,
+				A76D64E926C11515009FB433 /* EmptyListPlaceHolderView.swift in Sources */,
+				A76D64E526C1137F009FB433 /* DisablingButton.swift in Sources */,
 				A76D640F26BF1CB9009FB433 /* InternetObserver.swift in Sources */,
 				A76D644126BFA253009FB433 /* AppConfiguration.swift in Sources */,
 				A76D640E26BF1CB9009FB433 /* AbstractViewModel.swift in Sources */,
@@ -867,6 +941,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76D650426C11876009FB433 /* SearchListViewModel.swift in Sources */,
 				A76D646726BFC0D3009FB433 /* API.swift in Sources */,
 				A76D646826BFC0D3009FB433 /* Dissmissing.swift in Sources */,
 				A76D646926BFC0D3009FB433 /* NavigationController.swift in Sources */,
@@ -887,6 +962,8 @@
 				A76D647826BFC0D3009FB433 /* UserDefaultInfo+DeviceSpecific.swift in Sources */,
 				A76D647926BFC0D3009FB433 /* AppDelegate.swift in Sources */,
 				A76D647A26BFC0D3009FB433 /* MainViewController.swift in Sources */,
+				A76D64EA26C11515009FB433 /* EmptyListPlaceHolderView.swift in Sources */,
+				A76D64E626C1137F009FB433 /* DisablingButton.swift in Sources */,
 				A76D647B26BFC0D3009FB433 /* InternetObserver.swift in Sources */,
 				A76D647C26BFC0D3009FB433 /* AppConfiguration.swift in Sources */,
 				A76D647D26BFC0D3009FB433 /* AbstractViewModel.swift in Sources */,
@@ -902,6 +979,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A76D650526C11876009FB433 /* SearchListViewModel.swift in Sources */,
 				A76D64A726BFC0DF009FB433 /* API.swift in Sources */,
 				A76D64A826BFC0DF009FB433 /* Dissmissing.swift in Sources */,
 				A76D64A926BFC0DF009FB433 /* NavigationController.swift in Sources */,
@@ -922,6 +1000,8 @@
 				A76D64B826BFC0DF009FB433 /* UserDefaultInfo+DeviceSpecific.swift in Sources */,
 				A76D64B926BFC0DF009FB433 /* AppDelegate.swift in Sources */,
 				A76D64BA26BFC0DF009FB433 /* MainViewController.swift in Sources */,
+				A76D64EB26C11515009FB433 /* EmptyListPlaceHolderView.swift in Sources */,
+				A76D64E726C1137F009FB433 /* DisablingButton.swift in Sources */,
 				A76D64BB26BFC0DF009FB433 /* InternetObserver.swift in Sources */,
 				A76D64BC26BFC0DF009FB433 /* AppConfiguration.swift in Sources */,
 				A76D64BD26BFC0DF009FB433 /* AbstractViewModel.swift in Sources */,

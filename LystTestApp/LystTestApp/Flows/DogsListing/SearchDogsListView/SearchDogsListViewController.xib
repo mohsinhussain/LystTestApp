@@ -1,22 +1,185 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchDogsListViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchDogsListViewController" customModule="LystTestApp" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="descriptionLabel" destination="6ge-ZE-TCR" id="gMU-g0-6SW"/>
+                <outlet property="dogsCollectionView" destination="Prn-aS-aoR" id="rdE-gi-xjO"/>
+                <outlet property="emptyListPlaceHolderView" destination="DTd-Es-Dww" id="S1K-yh-VGl"/>
+                <outlet property="searchBarView" destination="RAP-9g-naz" id="YSm-sq-clf"/>
+                <outlet property="searchButton" destination="Qav-dl-KUT" id="tTQ-4A-hQE"/>
+                <outlet property="searchImageView" destination="s09-Uq-YMI" id="3ly-UF-EdX"/>
+                <outlet property="searchMainView" destination="Pke-2e-S9w" id="Bgs-5T-Nfa"/>
+                <outlet property="searchResultsLabel" destination="3cT-u2-fgK" id="DPU-7V-Sz2"/>
+                <outlet property="searchTextField" destination="63x-JL-KnV" id="Wvi-lg-2qn"/>
+                <outlet property="shadowView" destination="t2T-jt-Wz9" id="xCD-9u-sE4"/>
+                <outlet property="view" destination="Hon-5P-HAe" id="qAg-yZ-Lbj"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Hon-5P-HAe">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t2T-jt-Wz9">
+                    <rect key="frame" x="0.0" y="172" width="414" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="fQu-lK-95l"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pke-2e-S9w">
+                    <rect key="frame" x="0.0" y="54" width="414" height="158"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please search for a dog breed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ge-ZE-TCR">
+                            <rect key="frame" x="20" y="0.0" width="374" height="15.5"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                            <color key="textColor" name="Colors/gray_A7A7A7"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RAP-9g-naz">
+                            <rect key="frame" x="20" y="25.5" width="374" height="42"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Breed" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="63x-JL-KnV">
+                                    <rect key="frame" x="45" y="0.0" width="319" height="42"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                </textField>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search-icon" translatesAutoresizingMaskIntoConstraints="NO" id="s09-Uq-YMI">
+                                    <rect key="frame" x="20" y="13.5" width="15" height="15"/>
+                                    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="Iyr-mM-X9I"/>
+                                        <constraint firstAttribute="width" constant="15" id="WhX-U9-DG0"/>
+                                        <constraint firstAttribute="width" secondItem="s09-Uq-YMI" secondAttribute="height" multiplier="1:1" id="e9s-eW-jaQ"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.94509804248809814" green="0.9529411792755127" blue="0.97254908084869385" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="63x-JL-KnV" secondAttribute="bottom" id="0Bd-g1-pke"/>
+                                <constraint firstItem="63x-JL-KnV" firstAttribute="top" secondItem="RAP-9g-naz" secondAttribute="top" id="O0B-qx-tYe"/>
+                                <constraint firstItem="63x-JL-KnV" firstAttribute="centerY" secondItem="RAP-9g-naz" secondAttribute="centerY" id="cfB-Jc-U4W"/>
+                                <constraint firstItem="s09-Uq-YMI" firstAttribute="leading" secondItem="RAP-9g-naz" secondAttribute="leading" constant="20" id="k6g-Oi-eO7"/>
+                                <constraint firstItem="s09-Uq-YMI" firstAttribute="centerY" secondItem="RAP-9g-naz" secondAttribute="centerY" id="nWi-kr-3J7"/>
+                                <constraint firstAttribute="trailing" secondItem="63x-JL-KnV" secondAttribute="trailing" constant="10" id="ozy-6F-hWW"/>
+                                <constraint firstAttribute="height" constant="42" id="vu7-sd-lYH"/>
+                                <constraint firstItem="63x-JL-KnV" firstAttribute="leading" secondItem="s09-Uq-YMI" secondAttribute="trailing" constant="10" id="xhf-Ws-f0s"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="21"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qav-dl-KUT" customClass="DisablingButton" customModule="AhoyMerchant" customModuleProvider="target">
+                            <rect key="frame" x="20" y="87.5" width="374" height="42"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="vlT-nS-cvF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="20"/>
+                            <state key="normal" title="Search"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="22"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <variation key="heightClass=regular-widthClass=regular">
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="20"/>
+                            </variation>
+                            <connections>
+                                <action selector="searchAction:" destination="-1" eventType="touchUpInside" id="4w9-0X-Hyj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="RAP-9g-naz" secondAttribute="trailing" constant="20" id="QO5-dI-iOr"/>
+                        <constraint firstAttribute="trailing" secondItem="Qav-dl-KUT" secondAttribute="trailing" constant="20" id="Qar-II-s4t"/>
+                        <constraint firstItem="Qav-dl-KUT" firstAttribute="leading" secondItem="Pke-2e-S9w" secondAttribute="leading" constant="20" id="aen-nz-Rii"/>
+                        <constraint firstItem="RAP-9g-naz" firstAttribute="top" secondItem="6ge-ZE-TCR" secondAttribute="bottom" constant="10" id="c1c-Oi-ySe"/>
+                        <constraint firstAttribute="height" constant="158" id="fRV-20-Mvb"/>
+                        <constraint firstItem="RAP-9g-naz" firstAttribute="leading" secondItem="Pke-2e-S9w" secondAttribute="leading" constant="20" id="gCD-QI-qcT"/>
+                        <constraint firstItem="Qav-dl-KUT" firstAttribute="top" secondItem="RAP-9g-naz" secondAttribute="bottom" constant="20" id="hKD-Jq-n5b"/>
+                        <constraint firstItem="6ge-ZE-TCR" firstAttribute="top" secondItem="Pke-2e-S9w" secondAttribute="top" id="tA1-2r-dQr"/>
+                        <constraint firstItem="6ge-ZE-TCR" firstAttribute="leading" secondItem="Pke-2e-S9w" secondAttribute="leading" constant="20" id="yEU-SL-Em4"/>
+                        <constraint firstAttribute="trailing" secondItem="6ge-ZE-TCR" secondAttribute="trailing" constant="20" id="zvV-vK-8nU"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Prn-aS-aoR">
+                    <rect key="frame" x="0.0" y="267.5" width="414" height="628.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y0P-d3-cCp">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Results" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-u2-fgK">
+                    <rect key="frame" x="20" y="232" width="374" height="15.5"/>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                    <color key="textColor" name="Colors/gray_BFBFBF"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTd-Es-Dww" customClass="EmptyListPlaceHolderView" customModule="AhoyMerchant" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="262" width="414" height="190"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="190" id="JM7-ig-4oZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="XBj-cS-yfq"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="3cT-u2-fgK" firstAttribute="leading" secondItem="XBj-cS-yfq" secondAttribute="leading" constant="20" id="2k5-Ni-6N0"/>
+                <constraint firstItem="t2T-jt-Wz9" firstAttribute="trailing" secondItem="Pke-2e-S9w" secondAttribute="trailing" id="7Ap-rY-B8v"/>
+                <constraint firstItem="Prn-aS-aoR" firstAttribute="trailing" secondItem="XBj-cS-yfq" secondAttribute="trailing" id="AWS-xn-rlY"/>
+                <constraint firstItem="XBj-cS-yfq" firstAttribute="trailing" secondItem="3cT-u2-fgK" secondAttribute="trailing" constant="20" id="Ai5-gr-qom"/>
+                <constraint firstItem="DTd-Es-Dww" firstAttribute="leading" secondItem="XBj-cS-yfq" secondAttribute="leading" id="AxT-KD-Jlp"/>
+                <constraint firstItem="Pke-2e-S9w" firstAttribute="trailing" secondItem="XBj-cS-yfq" secondAttribute="trailing" id="Ko4-US-GIq"/>
+                <constraint firstItem="t2T-jt-Wz9" firstAttribute="bottom" secondItem="Pke-2e-S9w" secondAttribute="bottom" id="RVr-FW-BTQ"/>
+                <constraint firstItem="DTd-Es-Dww" firstAttribute="top" secondItem="Pke-2e-S9w" secondAttribute="bottom" constant="50" id="UnI-ph-N99"/>
+                <constraint firstItem="Prn-aS-aoR" firstAttribute="top" secondItem="3cT-u2-fgK" secondAttribute="bottom" constant="20" id="WhA-RU-16T"/>
+                <constraint firstItem="Pke-2e-S9w" firstAttribute="width" secondItem="Hon-5P-HAe" secondAttribute="width" id="gDd-mx-KnI"/>
+                <constraint firstItem="3cT-u2-fgK" firstAttribute="top" secondItem="Pke-2e-S9w" secondAttribute="bottom" constant="20" id="il8-tW-erF"/>
+                <constraint firstItem="Pke-2e-S9w" firstAttribute="leading" secondItem="XBj-cS-yfq" secondAttribute="leading" id="kI3-ZF-CK7"/>
+                <constraint firstItem="t2T-jt-Wz9" firstAttribute="leading" secondItem="Pke-2e-S9w" secondAttribute="leading" id="mCI-j7-M7x"/>
+                <constraint firstItem="Pke-2e-S9w" firstAttribute="top" secondItem="XBj-cS-yfq" secondAttribute="top" constant="10" id="qQ5-9e-ygY"/>
+                <constraint firstItem="Prn-aS-aoR" firstAttribute="leading" secondItem="XBj-cS-yfq" secondAttribute="leading" id="uHV-ML-4OM"/>
+                <constraint firstItem="DTd-Es-Dww" firstAttribute="trailing" secondItem="XBj-cS-yfq" secondAttribute="trailing" id="vY1-Px-geF"/>
+                <constraint firstAttribute="bottom" secondItem="Prn-aS-aoR" secondAttribute="bottom" id="zCw-DM-TRK"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="99.776785714285708"/>
         </view>
     </objects>
+    <resources>
+        <image name="search-icon" width="14" height="14"/>
+        <namedColor name="Colors/gray_A7A7A7">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Colors/gray_BFBFBF">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

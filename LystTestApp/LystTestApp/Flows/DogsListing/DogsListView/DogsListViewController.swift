@@ -63,10 +63,6 @@ extension DogsListViewController {
         
         dogsCollectionView.dataSource = self
         dogsCollectionView.delegate = self
-//        if let layout = merchantActionsCollectionView.collectionViewLayout as? UICollectionViewFlowLayout {
-//            layout.minimumLineSpacing = 0
-//            merchantActionsCollectionView.collectionViewLayout = layout
-//        }
         dogsCollectionView.reloadData()
     }
 

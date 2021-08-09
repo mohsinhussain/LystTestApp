@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyListPlaceHolderView" customModule="LystTestApp" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="z9f-rG-1xV" id="u7I-V8-QUz"/>
+                <outlet property="logoImageView" destination="jhI-Sp-WXT" id="dWT-lL-ZpW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vEi-dJ-PZB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash-logo" translatesAutoresizingMaskIntoConstraints="NO" id="jhI-Sp-WXT">
+                    <rect key="frame" x="64.5" y="8" width="246" height="122"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="jhI-Sp-WXT" secondAttribute="height" multiplier="244:121" id="72J-ft-jGc"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No search result found, Please search something else. Sorry for inconvience. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-rG-1xV">
+                    <rect key="frame" x="65.5" y="130" width="244" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="244" id="0h1-j9-zZl"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="XgW-XR-J4C"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="1U4-mt-9d2"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="z9f-rG-1xV" firstAttribute="top" secondItem="jhI-Sp-WXT" secondAttribute="bottom" id="1Qn-wM-OJJ"/>
+                <constraint firstItem="jhI-Sp-WXT" firstAttribute="centerX" secondItem="1U4-mt-9d2" secondAttribute="centerX" id="84Y-db-BTO"/>
+                <constraint firstAttribute="bottom" secondItem="z9f-rG-1xV" secondAttribute="bottom" constant="10" id="DvE-02-IvK"/>
+                <constraint firstItem="jhI-Sp-WXT" firstAttribute="top" secondItem="vEi-dJ-PZB" secondAttribute="top" constant="8" id="aSg-ih-iQX"/>
+                <constraint firstItem="z9f-rG-1xV" firstAttribute="centerX" secondItem="1U4-mt-9d2" secondAttribute="centerX" id="z5r-RE-IER"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="47.826086956521742" y="-68.303571428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splash-logo" width="800" height="600"/>
+    </resources>
+</document>

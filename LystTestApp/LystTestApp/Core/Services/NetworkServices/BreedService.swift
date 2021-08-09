@@ -13,6 +13,7 @@ import LystDatabaseManager
 protocol BreedServiceProtocol {
     func fetchDogsFromLocal(completion: @escaping ([Dog]) -> Void)
     func fetchDogs(completion: @escaping ([Dog], BackendError?) -> Void)
+    func searchDogsFromLocal(queryString: String, completion: @escaping ([Dog]) -> Void)
 }
 
 
@@ -32,6 +33,13 @@ class BreedService {
         return dbDogs.map { Dog(from: $0) }
     }
     
+    func searchDogsFromDatabase(query: String) -> [Dog] {
+        let version = getDataVersion(for: .dogs)
+        let predicate = NSPredicate(format: "name CONTAINS[c] '\(query)' AND version >= \(version)")
+        let dbDogs: [DBDog] = databaseService.findWithSort(satisfying: predicate, by: "id", isAscending: true)
+        return dbDogs.map { Dog(from: $0) }
+    }
+    
     func saveDogsToDatabase(_ dogs: [DBDog]) {
         guard !dogs.isEmpty else { return }
         databaseService.save(dogs)
@@ -39,6 +47,10 @@ class BreedService {
 }
 
 extension BreedService: BreedServiceProtocol {
+    func searchDogsFromLocal(queryString: String, completion: @escaping ([Dog]) -> Void) {
+        completion(searchDogsFromDatabase(query: queryString))
+    }
+    
     func fetchDogsFromLocal(completion: @escaping ([Dog]) -> Void) {
         completion(fetchDogsFromDatabase())
     }
