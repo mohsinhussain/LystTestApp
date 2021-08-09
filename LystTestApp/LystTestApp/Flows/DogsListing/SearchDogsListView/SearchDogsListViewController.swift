@@ -108,6 +108,19 @@ extension SearchDogsListViewController {
     }
 }
 
+// MARK: - NAVIGATION -
+
+extension SearchDogsListViewController {
+    func navigateToDogDetai(indexPath: IndexPath) {
+        if let dog = viewModel.getDog(at: indexPath.row) {
+            let dogDetailViewController = DogDetailViewController(nibName: String(describing: DogDetailViewController.self),
+                                                                              bundle: nil)
+            dogDetailViewController.viewModel.setDog(dog: dog)
+            self.navigationController?.pushViewController(dogDetailViewController, animated: false)
+        }
+    }
+}
+
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegateFlowLayout -
 
@@ -140,7 +153,7 @@ extension SearchDogsListViewController: UICollectionViewDataSource, UICollection
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        actionsHandling(at: indexPath)
+        navigateToDogDetai(indexPath: indexPath)
     }
     
     
@@ -149,7 +162,6 @@ extension SearchDogsListViewController: UICollectionViewDataSource, UICollection
     }
     
 }
-
 
 // MARK: - ViewModelUIDelegate -
 

@@ -162,6 +162,15 @@
 		A76D650326C11876009FB433 /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650226C11876009FB433 /* SearchListViewModel.swift */; };
 		A76D650426C11876009FB433 /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650226C11876009FB433 /* SearchListViewModel.swift */; };
 		A76D650526C11876009FB433 /* SearchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650226C11876009FB433 /* SearchListViewModel.swift */; };
+		A76D650926C12973009FB433 /* DogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650726C12973009FB433 /* DogDetailViewController.swift */; };
+		A76D650A26C12973009FB433 /* DogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650726C12973009FB433 /* DogDetailViewController.swift */; };
+		A76D650B26C12973009FB433 /* DogDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650726C12973009FB433 /* DogDetailViewController.swift */; };
+		A76D650C26C12973009FB433 /* DogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D650826C12973009FB433 /* DogDetailViewController.xib */; };
+		A76D650D26C12973009FB433 /* DogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D650826C12973009FB433 /* DogDetailViewController.xib */; };
+		A76D650E26C12973009FB433 /* DogDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A76D650826C12973009FB433 /* DogDetailViewController.xib */; };
+		A76D651026C133DB009FB433 /* DogDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650F26C133DB009FB433 /* DogDetailViewModel.swift */; };
+		A76D651126C133DB009FB433 /* DogDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650F26C133DB009FB433 /* DogDetailViewModel.swift */; };
+		A76D651226C133DB009FB433 /* DogDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76D650F26C133DB009FB433 /* DogDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -237,6 +246,9 @@
 		A76D64F426C116FC009FB433 /* SourceSansPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-SemiBold.ttf"; sourceTree = "<group>"; };
 		A76D64F526C116FC009FB433 /* SourceSansPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Italic.ttf"; sourceTree = "<group>"; };
 		A76D650226C11876009FB433 /* SearchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchListViewModel.swift; sourceTree = "<group>"; };
+		A76D650726C12973009FB433 /* DogDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailViewController.swift; sourceTree = "<group>"; };
+		A76D650826C12973009FB433 /* DogDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DogDetailViewController.xib; sourceTree = "<group>"; };
+		A76D650F26C133DB009FB433 /* DogDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,6 +440,7 @@
 		A76D63F226BF1CB9009FB433 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				A76D650626C1294A009FB433 /* DogDetailView */,
 				A76D63F326BF1CB9009FB433 /* DogsListing */,
 				A76D63FE26BF1CB9009FB433 /* Onboarding */,
 			);
@@ -635,6 +648,16 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		A76D650626C1294A009FB433 /* DogDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A76D650726C12973009FB433 /* DogDetailViewController.swift */,
+				A76D650826C12973009FB433 /* DogDetailViewController.xib */,
+				A76D650F26C133DB009FB433 /* DogDetailViewModel.swift */,
+			);
+			path = DogDetailView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -818,6 +841,7 @@
 				A76D641D26BF1CB9009FB433 /* SplashViewController.xib in Resources */,
 				A76D641A26BF1CB9009FB433 /* DogsListViewController.xib in Resources */,
 				A76D64FC26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */,
+				A76D650C26C12973009FB433 /* DogDetailViewController.xib in Resources */,
 				A76D641726BF1CB9009FB433 /* SearchDogsListViewController.xib in Resources */,
 				A76D641526BF1CB9009FB433 /* DogsListCollectionViewCell.xib in Resources */,
 				A76D64EE26C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */,
@@ -851,6 +875,7 @@
 				A76D648E26BFC0D3009FB433 /* SplashViewController.xib in Resources */,
 				A76D648F26BFC0D3009FB433 /* DogsListViewController.xib in Resources */,
 				A76D64FD26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */,
+				A76D650D26C12973009FB433 /* DogDetailViewController.xib in Resources */,
 				A76D649026BFC0D3009FB433 /* SearchDogsListViewController.xib in Resources */,
 				A76D649126BFC0D3009FB433 /* DogsListCollectionViewCell.xib in Resources */,
 				A76D64EF26C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */,
@@ -870,6 +895,7 @@
 				A76D64CE26BFC0DF009FB433 /* SplashViewController.xib in Resources */,
 				A76D64CF26BFC0DF009FB433 /* DogsListViewController.xib in Resources */,
 				A76D64FE26C116FD009FB433 /* SourceSansPro-SemiBold.ttf in Resources */,
+				A76D650E26C12973009FB433 /* DogDetailViewController.xib in Resources */,
 				A76D64D026BFC0DF009FB433 /* SearchDogsListViewController.xib in Resources */,
 				A76D64D126BFC0DF009FB433 /* DogsListCollectionViewCell.xib in Resources */,
 				A76D64F026C11563009FB433 /* EmptyListPlaceHolderView.xib in Resources */,
@@ -891,6 +917,7 @@
 				A76D643C26BF9F90009FB433 /* API.swift in Sources */,
 				A76D644F26BFAC54009FB433 /* Dissmissing.swift in Sources */,
 				A76D641426BF1CB9009FB433 /* NavigationController.swift in Sources */,
+				A76D650926C12973009FB433 /* DogDetailViewController.swift in Sources */,
 				A76D641326BF1CB9009FB433 /* ReusableCell.swift in Sources */,
 				A76D640D26BF1CB9009FB433 /* StatusEnum.swift in Sources */,
 				A76D641926BF1CB9009FB433 /* DogsListViewModel.swift in Sources */,
@@ -899,6 +926,7 @@
 				A76D642226BF1CB9009FB433 /* BreedService.swift in Sources */,
 				A76D644426BFA356009FB433 /* UserDefaultsInfo.swift in Sources */,
 				A76D643E26BF9FCD009FB433 /* DogBreedsAPI.swift in Sources */,
+				A76D651026C133DB009FB433 /* DogDetailViewModel.swift in Sources */,
 				A76D643A26BF9E9F009FB433 /* DogBreedsResponse.swift in Sources */,
 				A76D641626BF1CB9009FB433 /* DogsListCollectionViewCell.swift in Sources */,
 				A76D642326BF1CB9009FB433 /* AppNavigator.swift in Sources */,
@@ -945,6 +973,7 @@
 				A76D646726BFC0D3009FB433 /* API.swift in Sources */,
 				A76D646826BFC0D3009FB433 /* Dissmissing.swift in Sources */,
 				A76D646926BFC0D3009FB433 /* NavigationController.swift in Sources */,
+				A76D650A26C12973009FB433 /* DogDetailViewController.swift in Sources */,
 				A76D646A26BFC0D3009FB433 /* ReusableCell.swift in Sources */,
 				A76D646B26BFC0D3009FB433 /* StatusEnum.swift in Sources */,
 				A76D646C26BFC0D3009FB433 /* DogsListViewModel.swift in Sources */,
@@ -953,6 +982,7 @@
 				A76D646F26BFC0D3009FB433 /* BreedService.swift in Sources */,
 				A76D647026BFC0D3009FB433 /* UserDefaultsInfo.swift in Sources */,
 				A76D647126BFC0D3009FB433 /* DogBreedsAPI.swift in Sources */,
+				A76D651126C133DB009FB433 /* DogDetailViewModel.swift in Sources */,
 				A76D647226BFC0D3009FB433 /* DogBreedsResponse.swift in Sources */,
 				A76D647326BFC0D3009FB433 /* DogsListCollectionViewCell.swift in Sources */,
 				A76D647426BFC0D3009FB433 /* AppNavigator.swift in Sources */,
@@ -983,6 +1013,7 @@
 				A76D64A726BFC0DF009FB433 /* API.swift in Sources */,
 				A76D64A826BFC0DF009FB433 /* Dissmissing.swift in Sources */,
 				A76D64A926BFC0DF009FB433 /* NavigationController.swift in Sources */,
+				A76D650B26C12973009FB433 /* DogDetailViewController.swift in Sources */,
 				A76D64AA26BFC0DF009FB433 /* ReusableCell.swift in Sources */,
 				A76D64AB26BFC0DF009FB433 /* StatusEnum.swift in Sources */,
 				A76D64AC26BFC0DF009FB433 /* DogsListViewModel.swift in Sources */,
@@ -991,6 +1022,7 @@
 				A76D64AF26BFC0DF009FB433 /* BreedService.swift in Sources */,
 				A76D64B026BFC0DF009FB433 /* UserDefaultsInfo.swift in Sources */,
 				A76D64B126BFC0DF009FB433 /* DogBreedsAPI.swift in Sources */,
+				A76D651226C133DB009FB433 /* DogDetailViewModel.swift in Sources */,
 				A76D64B226BFC0DF009FB433 /* DogBreedsResponse.swift in Sources */,
 				A76D64B326BFC0DF009FB433 /* DogsListCollectionViewCell.swift in Sources */,
 				A76D64B426BFC0DF009FB433 /* AppNavigator.swift in Sources */,

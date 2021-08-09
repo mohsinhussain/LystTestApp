@@ -105,6 +105,15 @@ extension DogsListViewController {
                                                                           bundle: nil)
         self.navigationController?.pushViewController(searchDogsListViewController, animated: false)
     }
+    
+    func navigateToDogDetai(indexPath: IndexPath) {
+        if let dog = viewModel.getDog(at: indexPath.row) {
+            let dogDetailViewController = DogDetailViewController(nibName: String(describing: DogDetailViewController.self),
+                                                                              bundle: nil)
+            dogDetailViewController.viewModel.setDog(dog: dog)
+            self.navigationController?.pushViewController(dogDetailViewController, animated: false)
+        }
+    }
 }
 
 
@@ -140,7 +149,7 @@ extension DogsListViewController: UICollectionViewDataSource, UICollectionViewDe
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        actionsHandling(at: indexPath)
+        navigateToDogDetai(indexPath: indexPath)
     }
     
     
