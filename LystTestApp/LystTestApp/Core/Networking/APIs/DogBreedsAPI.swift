@@ -9,12 +9,8 @@ import Foundation
 
 enum DogBreedsAPI: String {
 
-    // Search Breeds
-    case searchBreeds = "breeds/search?q=%@"
-    
     // Get Breeds
     case getBreeds = "breeds"
-//    case getOrdersHistory = "Order/OrderHistory?pagenumber=%d&pagesize=%d&statusIds=%@"
     
     /** Contains the full path to the endpoint */
     func fullPath(withParameters parameters: CVarArg...) -> String {

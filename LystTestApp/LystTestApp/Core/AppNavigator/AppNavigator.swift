@@ -39,7 +39,6 @@ final class AppNavigator {
     static func displayHomeScreen() {
         DispatchQueue.main.async {
             let dogsListViewController = DogsListViewController(nibName: String(describing: DogsListViewController.self), bundle: nil)
-    //        let dogsListViewController = DogsListViewController()
             setRootViewController(dogsListViewController, animated: true)
         }
         
